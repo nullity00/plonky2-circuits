@@ -12,7 +12,7 @@ const D: usize = 2;
 type C = PoseidonGoldilocksConfig;
 type F = <C as GenericConfig<D>>::F;
 
-fn some_function_in_zk(x_inp: u64) -> (CircuitData<GoldiLocksField, PoseidonGoldilocksConfig, 2>, PartialWitness<GoldiLocksField>) {
+fn some_function_in_zk(x_inp: u64) -> (CircuitData<GoldilocksField, PoseidonGoldilocksConfig, 2>, PartialWitness<GoldilocksField>) {
     let config = CircuitConfig::standard_recursion_config();
     let mut builder = CircuitBuilder::<F, D>::new(config);
 
